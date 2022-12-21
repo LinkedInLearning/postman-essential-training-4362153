@@ -1,0 +1,38 @@
+00_02:
+Learning REST APIs: https://www.linkedin.com/learning/learning-rest-apis
+Introducing Postman: https://www.linkedin.com/learning/introducing-postman
+Learning Windows Terminal: https://www.linkedin.com/learning/learning-windows-terminal
+
+00_03:
+Postman installation link: https://postman.com/downloads
+Node installation link: https://nodejs.org
+
+01_02:
+Contact List app: https://thinking-tester-contact-list.herokuapp.com
+
+01_03: 
+URL for login: https://thinking-tester-contact-list.herokuapp.com/users/login
+
+01_04:
+Postman documentation for Contact List app: https://documenter.getpostman.com/view/4012288/2s8YRiKDbu
+
+03_02:
+Link to GitHub repo: https://github.com/LinkedInLearning/postman-essential-training-4362153
+
+03_03:
+Link to GitHub repo: https://github.com/LinkedInLearning/postman-essential-training-4362153
+
+05_01:
+Pet Store API: https://petstore.swagger.io
+Poke API: https://pokeapi.co
+
+Jenkins documentation: https://learning.postman.com/docs/running-collections/using-newman-cli/integration-with-jenkins
+
+GitLab documentation: https://learning.postman.com/docs/integrations/available-integrations/ci-integrations/gitlab-ci
+
+Travis CI documentation: https://learning.postman.com/docs/running-collections/using-newman-cli/integration-with-travis
+
+Circle CI documentation: https://learning.postman.com/docs/integrations/available-integrations/ci-integrations/circleci
+
+
+Postman CLI tool: https://learning.postman.com/docs/postman-cli/postman-cli-overview

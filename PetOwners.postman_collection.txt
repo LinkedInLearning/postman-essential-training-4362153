@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "ef0cda43-0950-40a7-bdc7-fa27a5e6da72",
+		"name": "Pet Owners",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Pet Owners",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Carol's second dog is named Fred\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.owners[2].pets.dogs[1].name).to.eql(\"Fred\");",
+							"});",
+							"",
+							"pm.test(\"Bob's first cat is 2 years old\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.owners[1].pets.cats[0].age).to.eql(2);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://98f2c9ce-fa98-4bd1-ac26-3da85ea67799.mock.pstmn.io/owners",
+					"protocol": "https",
+					"host": [
+						"98f2c9ce-fa98-4bd1-ac26-3da85ea67799",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"owners"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Pet Owners",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/owners",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"owners"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n   \"owners\":[\n      {\n         \"id\":1,\n         \"name\":\"Amy\",\n         \"pets\":{\n            \"cats\":[\n               {\n                  \"name\":\"Fluffy\",\n                  \"age\":2,\n                  \"breed\":\"Persian\"\n               },\n               {\n                  \"name\":\"Mister Whiskers\",\n                  \"age\":4,\n                  \"breed\":\"Siamese\"\n               }\n            ],\n            \"dogs\":[\n               {\n                  \"name\":\"Spot\",\n                  \"age\":3,\n                  \"breed\":\"Labrador Retriever\"\n               }\n            ]\n         }\n      },\n      {\n         \"id\":2,\n         \"name\":\"Bob\",\n         \"pets\":{\n            \"cats\":[\n               {\n                  \"name\":\"Galadriel\",\n                  \"age\":2,\n                  \"breed\":\"Ragdoll\"\n               },\n               {\n                  \"name\":\"Gandalf\",\n                  \"age\":3,\n                  \"breed\":\"Ragdoll\"\n               }\n            ]\n         }\n      },\n      {\n         \"id\":3,\n         \"name\":\"Carol\",\n         \"pets\":{\n            \"cats\":[\n               {\n                  \"name\":\"D'Artagnan\",\n                  \"age\":5,\n                  \"breed\":\"Persian\"\n               }\n            ],\n            \"dogs\":[\n               {\n                  \"name\":\"Moe\",\n                  \"age\":3,\n                  \"breed\":\"Border Collie\"\n               },\n               {\n                  \"name\":\"Fred\",\n                  \"age\":3,\n                  \"breed\":\"Shih Tzu\"\n               },\n               {\n                  \"name\":\"Penelope\",\n                  \"age\":4,\n                  \"breed\":\"Great Dane\"\n               }\n            ]\n         }\n      }\n   ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Pet Owner",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Amy's second cat is a Siamese\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.pets.cats[1].breed).to.eql(\"Siamese\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://98f2c9ce-fa98-4bd1-ac26-3da85ea67799.mock.pstmn.io/owners/1",
+					"protocol": "https",
+					"host": [
+						"98f2c9ce-fa98-4bd1-ac26-3da85ea67799",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"owners",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Pet Owner",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/owners/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"owners",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n\t\"id\": 1,\n\t\"name\": \"Amy\",\n\t\"pets\": {\n\t\t\"cats\": [{\n\t\t\t\t\"name\": \"Fluffy\",\n\t\t\t\t\"age\": 2,\n\t\t\t\t\"breed\": \"Persian\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"name\": \"Mister Whiskers\",\n\t\t\t\t\"age\": 4,\n\t\t\t\t\"breed\": \"Siamese\"\n\t\t\t}\n\t\t],\n\t\t\"dogs\": [{\n\t\t\t\"name\": \"Spot\",\n\t\t\t\"age\": 3,\n\t\t\t\"breed\": \"Labrador Retriever\"\n\t\t}]\n\t}\n}"
+				}
+			]
+		}
+	]
+}

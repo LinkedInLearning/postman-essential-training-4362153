@@ -36,3 +36,4 @@ Circle CI documentation: https://learning.postman.com/docs/integrations/availabl
 
 
 Postman CLI tool: https://learning.postman.com/docs/postman-cli/postman-cli-overview
+The Complete Software Tester: https://www.amazon.com/Complete-Software-Tester-Strategies-High-Quality/dp/B0BCCV7VGK/

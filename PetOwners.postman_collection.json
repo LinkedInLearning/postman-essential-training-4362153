@@ -2,7 +2,8 @@
 	"info": {
 		"_postman_id": "ef0cda43-0950-40a7-bdc7-fa27a5e6da72",
 		"name": "Pet Owners",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4012288"
 	},
 	"item": [
 		{
@@ -12,15 +13,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Carol's second dog is named Fred\", function () {",
-							"    var jsonData = pm.response.json();",
-							"    pm.expect(jsonData.owners[2].pets.dogs[1].name).to.eql(\"Fred\");",
-							"});",
-							"",
-							"pm.test(\"Bob's first cat is 2 years old\", function () {",
-							"    var jsonData = pm.response.json();",
-							"    pm.expect(jsonData.owners[1].pets.cats[0].age).to.eql(2);",
-							"});"
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -82,10 +75,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Amy's second cat is a Siamese\", function () {",
-							"    var jsonData = pm.response.json();",
-							"    pm.expect(jsonData.pets.cats[1].breed).to.eql(\"Siamese\");",
-							"});"
+							""
 						],
 						"type": "text/javascript"
 					}

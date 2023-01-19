@@ -16,6 +16,9 @@ URL for login: https://thinking-tester-contact-list.herokuapp.com/users/login
 01_04:
 Postman documentation for Contact List app: https://documenter.getpostman.com/view/4012288/2s8YRiKDbu
 
+01_05:
+Postman documentation for Contact List app: https://documenter.getpostman.com/view/4012288/2s8YRiKDbu
+
 03_02:
 Link to GitHub repo: https://github.com/LinkedInLearning/postman-essential-training-4362153
 
